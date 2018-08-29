@@ -1,0 +1,310 @@
+@import "syntax-variables";
+
+
+atom-text-editor,atom-text-editor {
+  // background-color: @syntax-background-color;
+  background-color: transparent;
+  color: lighten(@syntax-text-color, 5%);
+
+  .wrap-guide {
+    background-color: @syntax-wrap-guide-color;
+  }
+
+  .indent-guide {
+    color: @syntax-indent-guide-color;
+  }
+
+  .invisible-character {
+    color: @syntax-invisible-character-color;
+  }
+
+  .gutter {
+    background-color: @syntax-gutter-background-color;
+    color: @syntax-gutter-text-color;
+
+    .line-number {
+      &.cursor-line {
+        background-color: @syntax-gutter-background-color-selected;
+        color: @syntax-gutter-text-color-selected;
+      }
+
+      &.cursor-line-no-selection {
+        color: @syntax-gutter-text-color-selected;
+      }
+    }
+  }
+
+  .gutter .line-number.folded,
+  .gutter .line-number:after,
+  .fold-marker:after {
+    color: @light-gray;
+  }
+
+  .invisible {
+    color: @syntax-text-color;
+  }
+
+  .cursor {
+    color: @syntax-cursor-color;
+  }
+
+  .selection .region {
+    // background-color: @syntax-selection-color;
+    background-color: rgba(245,245,255,.5);
+  }
+}
+
+atom-text-editor .search-results .marker .region,
+:host .search-results .marker .region {
+  background-color: transparent;
+  border: 1px solid @syntax-result-marker-color;
+}
+
+atom-text-editor .search-results .marker.current-result .region,
+:host .search-results .marker.current-result .region {
+  border: 1px solid @syntax-result-marker-color-selected;
+}
+
+.syntax--comment {
+  color: @light-gray;
+}
+
+.syntax--keyword {
+  color: @light-blue-darken-4;
+
+  &.control {
+    color: @light-blue-darken-3;
+  }
+
+  &.operator {
+    color: @syntax-text-color;
+  }
+
+  &.other.special-method {
+    color: darken(@light-blue, 15%);
+  }
+
+  &.other.unit {
+    color: @light-blue-lighten-2;
+  }
+}
+
+.syntax--storage {
+  color: @light-blue-darken-2;
+}
+
+.syntax--constant {
+  color: saturate(darken(@amethyst-smoke, 10%), 10%);
+
+  &.character.escape {
+    color: @light-blue-darken-2;
+  }
+
+  &.numeric {
+    color: darken(@light-blue, 15%);
+  }
+
+  &.other.color {
+    color: @light-blue-accent-3;
+  }
+
+  &.other.symbol {
+    color: @light-blue-accent-4;
+  }
+}
+
+.syntax--variable {
+  color: lighten(@astronaut, 15%);
+
+  &.interpolation {
+    color: darken(@light-blue, 10%);
+  }
+
+  &.parameter.function {
+    color: @syntax-text-color;
+  }
+}
+
+.syntax--invalid.syntax--illegal {
+  background-color: darken(@light-blue, 15%);
+  color: @syntax-background-color;
+}
+
+.syntax--string {
+  color: @light-blue-darken-3;
+
+
+  &.regexp {
+    color: desaturate(darken(@light-blue-lighten-2, 15%), 10%);
+
+    .source.ruby.embedded {
+      color: @light-blue-darken-1;
+    }
+  }
+
+  &.other.link {
+    color: darken(@light-blue, 15%);
+  }
+}
+
+.punctuation {
+  &.definition {
+    &.syntax--comment {
+      color: darken(@light-gray, 15%);
+    }
+
+    &.syntax--string,
+    &.syntax--variable,
+    &.parameters,
+    &.array {
+      color: @syntax-text-color;
+    }
+
+    &.heading,
+    &.identity {
+      color: darken(@light-blue, 15%);
+    }
+
+    &.bold {
+      color: @light-blue-lighten-4;
+      font-weight: bold;
+    }
+
+    &.italic {
+      color: darken(@light-blue, 5%);
+      font-style: italic;
+    }
+  }
+
+  &.section.embedded {
+    color: darken(@light-blue, 10%);
+  }
+
+}
+
+.support {
+  &.class {
+    color: @light-blue-lighten-3;
+  }
+
+  &.function  {
+    color: lighten(@astronaut, 20%);
+
+    &.any-method {
+      color: @light-blue;
+    }
+  }
+}
+
+.entity {
+  &.name.function {
+    color: spin(darken(@light-blue, 15%), 10);
+  }
+  &.name.type {
+    color: @light-blue-accent-4;
+    text-decoration: underline;
+  }
+
+  &.other.inherited-class {
+    color: darken(@light-blue-accent-3, 10);
+  }
+  &.name.class, &.name.type.class {
+    color: lighten(@astronaut, 15%);
+  }
+
+  &.name.section {
+    color: darken(@light-blue, 15%);
+  }
+
+  &.name.tag {
+    color: @light-blue-lighten-1;
+    text-decoration: underline;
+  }
+
+  &.other.attribute-name {
+    color: @light-blue-lighten-3;
+
+    &.id {
+      color: @light-blue;
+    }
+  }
+}
+
+.meta {
+  &.class {
+    color: @light-blue-lighten-4;
+  }
+
+  &.link {
+    color: @light-blue-lighten-3;
+  }
+
+  &.require {
+    color: @light-blue;
+  }
+
+  &.selector {
+    color: @light-blue-darken-1;
+  }
+
+  &.separator {
+    background-color: @gray;
+    color: @syntax-text-color;
+  }
+}
+
+.syntax--none {
+  color: @syntax-text-color;
+}
+
+.markup {
+  &.bold {
+    color: @light-blue-darken-4;
+    font-weight: bold;
+  }
+
+  &.changed {
+    color: @light-blue-darken-3;
+  }
+
+  &.deleted {
+    color: lighten(@astronaut, 15%);
+  }
+
+  &.italic {
+    color: @light-blue-lighten-5;
+    font-style: italic;
+  }
+
+  &.heading .punctuation.definition.heading {
+    color: @light-blue;
+  }
+
+  &.inserted {
+    color: @light-blue-darken-2;
+  }
+
+  &.list {
+    color: lighten(@astronaut, 15%);
+  }
+
+  &.quote {
+    color: @light-blue-lighten-3;
+  }
+
+  &.raw.inline {
+    color: @light-blue;
+  }
+}
+
+.syntax--source.syntax--gfm .syntax--markup {
+  -webkit-font-smoothing: auto;
+  &.heading {
+    color: @light-blue-darken-2;
+  }
+}
+
+atom-text-editor[mini] .scroll-view,
+:host([mini]) .scroll-view {
+  padding-left: 1px;
+}

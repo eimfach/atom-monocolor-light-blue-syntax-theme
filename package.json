@@ -1,0 +1,63 @@
+{
+  "_args": [
+    [
+      {
+        "raw": "/private/var/folders/k6/13d6jq7x6_56s4sps69r7c2w0000gn/T/d-118728-14847-1wn1x8e.d6r1yh9f6r/package.tgz",
+        "scope": null,
+        "escapedName": null,
+        "name": null,
+        "rawSpec": "/private/var/folders/k6/13d6jq7x6_56s4sps69r7c2w0000gn/T/d-118728-14847-1wn1x8e.d6r1yh9f6r/package.tgz",
+        "spec": "/private/var/folders/k6/13d6jq7x6_56s4sps69r7c2w0000gn/T/d-118728-14847-1wn1x8e.d6r1yh9f6r/package.tgz",
+        "type": "local"
+      },
+      "/private/var/folders/k6/13d6jq7x6_56s4sps69r7c2w0000gn/T/apm-install-dir-118728-14847-15z7z5v.a6enl5l8fr"
+    ]
+  ],
+  "_from": "../d-118728-14847-1wn1x8e.d6r1yh9f6r/package.tgz",
+  "_id": "monocolor-light-blue-syntax@2.0.0",
+  "_inCache": true,
+  "_location": "/monocolor-light-blue-syntax",
+  "_phantomChildren": {},
+  "_requested": {
+    "raw": "/private/var/folders/k6/13d6jq7x6_56s4sps69r7c2w0000gn/T/d-118728-14847-1wn1x8e.d6r1yh9f6r/package.tgz",
+    "scope": null,
+    "escapedName": null,
+    "name": null,
+    "rawSpec": "/private/var/folders/k6/13d6jq7x6_56s4sps69r7c2w0000gn/T/d-118728-14847-1wn1x8e.d6r1yh9f6r/package.tgz",
+    "spec": "/private/var/folders/k6/13d6jq7x6_56s4sps69r7c2w0000gn/T/d-118728-14847-1wn1x8e.d6r1yh9f6r/package.tgz",
+    "type": "local"
+  },
+  "_requiredBy": [
+    "#USER"
+  ],
+  "_resolved": "file:../d-118728-14847-1wn1x8e.d6r1yh9f6r/package.tgz",
+  "_shasum": "7ab213fed7398c471503e0d3a3815765cc4bb1b9",
+  "_shrinkwrap": null,
+  "_spec": "/private/var/folders/k6/13d6jq7x6_56s4sps69r7c2w0000gn/T/d-118728-14847-1wn1x8e.d6r1yh9f6r/package.tgz",
+  "_where": "/private/var/folders/k6/13d6jq7x6_56s4sps69r7c2w0000gn/T/apm-install-dir-118728-14847-15z7z5v.a6enl5l8fr",
+  "bugs": {
+    "url": "https://github.com/Cerealkillerway/atom-monocolor-light-blue-syntax-theme/issues"
+  },
+  "dependencies": {},
+  "description": "light blue single color syntax highlight theme",
+  "devDependencies": {},
+  "engines": {
+    "atom": ">=1.0.0 <2.0.0"
+  },
+  "homepage": "https://github.com/Cerealkillerway/atom-monocolor-light-blue-syntax-theme#readme",
+  "keywords": [
+    "syntax",
+    "theme"
+  ],
+  "license": "MIT",
+  "name": "monocolor-light-blue-syntax",
+  "optionalDependencies": {},
+  "readme": "# monocolor-light-blue-syntax theme\n\nSingle color syntax theme for dark Atom UIs\n\nBased on [**MaterializeCSS**](http://materializecss.com/color.html) colors;\nbase color: light-blue;\n\n![monocolor-light-blue screenshot](http://files.web-forge.info/atom-themes/monocolor-light-blue.jpg)\n",
+  "readmeFilename": "README.md",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Cerealkillerway/atom-monocolor-light-blue-syntax-theme.git"
+  },
+  "theme": "syntax",
+  "version": "2.0.0"
+}
